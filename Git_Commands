@@ -1,0 +1,33 @@
+git init
+
+// The 'git init' command initializes a new Git repository in the current directory.
+// It creates a hidden .git folder where Git stores all the metadata and version history.
+// This command is typically run when starting a new project or when you want to convert an existing directory into a Git repository.
+// After running this command, you can start tracking changes to files in the directory using Git commands.
+
+git add .
+
+// The 'git add .' command stages all changes in the current directory for the next commit.
+// It tells Git to track the changes made to files and directories. 
+// The '.' indicates that all files and directories in the current directory should be added.
+// This is the first step in the Git workflow, preparing changes to be committed.   
+
+git commit -m "Initial commit"
+
+// The 'git commit -m "Initial commit"' command creates a new commit in the Git repository.     
+// The '-m' flag allows you to add a commit message directly in the command line.
+// The message "Initial commit" describes the changes made in this commit.  
+// This is the second step in the Git workflow, finalizing the changes made to the repository.
+// The commit captures the state of the repository at this point in time, allowing you to track changes over time.
+// Each commit is identified by a unique hash, which can be used to reference it later.
+
+git log
+
+// The 'git log' command displays the commit history of the repository.
+// It shows a list of all commits made, along with their commit hashes, author information, and commit messages.
+// This command is useful for reviewing the history of changes made to the repository and understanding its evolution over time.
+// You can use various flags with 'git log' to customize the output, such as showing a specific number of commits or formatting the output differently.
+// For example, 'git log --oneline' shows a simplified view of the commit history with one line per commit.
+// This command is essential for tracking the progress of a project and understanding how it has changed over time.
+// It helps developers to identify when specific changes were made and by whom, making it easier to collaborate on projects and manage code changes effectively.    
+
