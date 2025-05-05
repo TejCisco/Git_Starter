@@ -1,3 +1,5 @@
+-- Local computer > Staging area > Remote repository
+--to make local dir as a git repo
 git init
 
 // The 'git init' command initializes a new Git repository in the current directory.
@@ -5,13 +7,18 @@ git init
 // This command is typically run when starting a new project or when you want to convert an existing directory into a Git repository.
 // After running this command, you can start tracking changes to files in the directory using Git commands.
 
+--after doing any changes or creating new file, to add to stage
 git add .
+gti add <filename>
+
+
 
 // The 'git add .' command stages all changes in the current directory for the next commit.
 // It tells Git to track the changes made to files and directories. 
 // The '.' indicates that all files and directories in the current directory should be added.
 // This is the first step in the Git workflow, preparing changes to be committed.   
 
+--commiting/saving the change or new file to git repo
 git commit -m "Initial commit"
 
 // The 'git commit -m "Initial commit"' command creates a new commit in the Git repository.     
@@ -21,6 +28,7 @@ git commit -m "Initial commit"
 // The commit captures the state of the repository at this point in time, allowing you to track changes over time.
 // Each commit is identified by a unique hash, which can be used to reference it later.
 
+--to know which author did what commits
 git log
 
 // The 'git log' command displays the commit history of the repository.
@@ -30,4 +38,15 @@ git log
 // For example, 'git log --oneline' shows a simplified view of the commit history with one line per commit.
 // This command is essential for tracking the progress of a project and understanding how it has changed over time.
 // It helps developers to identify when specific changes were made and by whom, making it easier to collaborate on projects and manage code changes effectively.    
+
+-- to check if left out change or file 
+git status
+
+// The 'git status' command shows the current status of the working directory and staging area.     
+// It provides information about which files are staged for the next commit, which files have changes that are not staged, and which files are untracked (not being tracked by Git).
+// This command is useful for checking the state of your repository before making a commit or pushing changes to a remote repository.
+// It helps you understand what changes have been made, what files are being tracked, and what files need to be added or committed.
+// The output of 'git status' includes information about the branch you are on, any uncommitted changes, and any files that are not being tracked by Git.
+// This command is essential for managing your workflow and ensuring that you are aware of the current state of your repository before making further changes or commits.
+// It helps you avoid committing unintended changes or forgetting to stage files that should be included in the next commit.
 
